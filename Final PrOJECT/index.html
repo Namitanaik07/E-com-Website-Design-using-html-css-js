@@ -22,7 +22,7 @@
         <a href="Cart.html"><li class="Cart"> <img class="Cart" src="img/cart.png"></li></a>
       </ul>
         <div id="myModalLogIn" class="modalLS">
-               <!-- Modal content -->
+               <!---Modal content--->
                <div class="modal-content3">
                  <span class="close" onclick="document.getElementById('myModalLogIn').style.display='none'" style="color:black">x</span>
                  <img class="DP" style="width: 200px; height:200px; margin-top:7%; padding:0%;" src="img/DP3.png">
@@ -50,7 +50,7 @@
                  <span class="close" onclick="document.getElementById('myModalSignup').style.display='none'" style="color:black">x</span>
                  <img class="DP" style="width: 200px; height:200px; margin-top:7%; padding:0%;" src="img/DP3.png">
                  <center><b style="font-size:30px;"><br> Sign Up </b></center><br>
-                 <form name="myForm" onsubmit="return checkPassword(this)" method="post">
+                 <form name="myForm" method="get" action="success.html">
                    <ul style="margin-left:0%; padding-left:0%;">
                      <li style="margin-left:0%; padding-left:0%;">
                        <input type="text" name="fname" style="width:39%; height:40px; font-size:30x;" placeholder="First Name" required>
@@ -68,11 +68,11 @@
                       <br><br><b style="font-size: 22px;">Date of Birth: &nbsp&nbsp</b>
                       <input type="date" id="birthday" name="birthday"><br>
                      <li style="margin-left:0%; padding-left:0%;">
-                       <br><input type="email" name="email" style="width:80%; height:40px; font-size:30x;" placeholder="Email" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
+                       <br><input type="email" name="email" style="width:80%; height:40px; font-size:30x;" placeholder="Email"  required><br>
                      </li>
                      <br>
                      <li>
-                       <input type="password" name="password" style="width:80%; height:40px; font-size:30x;" placeholder="Password" required><br>
+                       <input type="password" name="password" style="width:80%; height:40px; font-size:30x;" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
                      </li>
                      <li style="margin-left:3%; padding-left:0%; color:red;">
                      * 1 Lower letter, 1 Capital letter, 1 digit and 1-8 characters.<br>
@@ -83,7 +83,7 @@
                      </li>
                      <br>
                      <li>
-                       <b><a><input type="submit" class="submitSignup" value="Submit"></a></b>
+                       <input type="submit" class="submitSignup" value="Submit">
                      </li>
                    </ul>
                  </form>
